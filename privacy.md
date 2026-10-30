@@ -15,7 +15,7 @@ The Application does not collect data that directly identifies you, such as your
 
 The Application does not collect usage analytics. Crash reporting is **off by default**: no crash data is sent unless you opt in, either by accepting the prompt shown on first launch, or by enabling "Send crash reports" in Settings. You can turn this off again at any time in Settings; crash reports not yet sent are then deleted from your device.
 
-The Application may offer optional, user-triggered rewarded ads, including ads that unlock one older Daily Puzzle Archive challenge for free users. Rewarded ads are not shown automatically during gameplay, and the ad software is not started until you ask to watch one. Each time the Application starts, it contacts Google's consent tool (the User Messaging Platform) to check whether a consent form is required in your region and, if so, shows it. This check sends Google technical information such as your IP address and basic device details, whether or not you ever watch an ad. If you choose to watch a rewarded ad, Google AdMob may collect and process information such as device identifiers, the Android Advertising ID, IP-derived approximate location, ad interaction data, diagnostics, and related technical information to provide, measure, personalize, and secure ads, subject to your consent choices where required. You can manage available ad privacy choices from the in-app Settings screen.
+The Application may offer optional, user-triggered rewarded ads, including ads that unlock one older Daily Puzzle Archive challenge for free users. Rewarded ads are not shown automatically during gameplay, and the ad software is not started until you ask to watch one. Every ad request is marked as child-directed for every player, whatever their age: ads are limited to content suitable for all ages (rated G) and are never personalized, and the Application does not access the Android Advertising ID or the iOS advertising identifier (IDFA). Each time the Application starts, it contacts Google's consent tool (the User Messaging Platform), which sends Google technical information such as your IP address and basic device details; because every player is treated as under the age of consent, it does not ask for consent to personalized ads. If you choose to watch a rewarded ad, Google AdMob may process technical information such as IP-derived approximate location, ad interaction data and diagnostics to serve, measure and secure that ad, under Google's rules for child-directed requests.
 
 ## Third Party Access
 
@@ -49,14 +49,14 @@ The Application does not store personal data on external servers operated by the
 
 ## Children's Privacy
 
-The Application is not directed at children under the age of 13. The Service Provider does not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided personal information, please contact the Service Provider to have the information removed.
+The Application is suitable for all ages. Ads are non-personalized and child-directed for every player. The Service Provider does not knowingly collect personal information from children beyond what is described in this policy. If you are a parent or guardian and believe your child has provided personal information, please contact the Service Provider to have the information removed.
 
 ## Your Rights
 
 You have the right to:
 *   **Access:** Request information about data collected about you
 *   **Deletion:** Request deletion of your local data by uninstalling the Application or clearing app data; for third-party crash, ads, or purchase data, contact the Service Provider or the relevant third-party provider as applicable
-*   **Opt-out:** Crash reporting is off until you consent. You can enable or disable "Send crash reports" at any time from the in-app Settings screen. You can manage available ad privacy choices from Settings as provided by Google AdMob's consent tools.
+*   **Opt-out:** Crash reporting is off until you consent. You can enable or disable "Send crash reports" at any time from the in-app Settings screen. Where Google's consent tool offers ad privacy choices in your region, you can manage them from Settings.
 
 ## Security
 
