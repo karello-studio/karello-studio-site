@@ -2,7 +2,7 @@
 
 # Karello Studio website
 
-The source for [karellostudio.com](https://karellostudio.com), built with Jekyll and served by GitHub Pages from `main`.
+The source for [karellostudio.com](https://karellostudio.com), built with Jekyll and deployed to GitHub Pages from `main`.
 
 This repository is public so GitHub Pages can publish it. Issues and pull requests are turned off, so to get in touch, email support@karellostudio.com.
 
