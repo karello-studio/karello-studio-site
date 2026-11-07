@@ -23,9 +23,12 @@ main_class: game
     <img class="tp-icon" src="/assets/three-pebbles-icon.png" alt="" width="80" height="80">
     <h1>Three Pebbles</h1>
     <p class="tp-tagline">Line up three.</p>
-    <p class="tp-lede">A calm two-player strategy game in the tradition of Nine Men's Morris and the old mill board games. Place and slide your pebbles to make a line. Nothing is ever captured: on the bigger boards, a scored line returns to your hand. Play the computer or a friend nearby, no internet needed. Available in 15 languages.</p>
-    <span class="badge"><span class="dot" style="background: var(--p1)"></span><span class="dot" style="background: var(--p2)"></span>Coming soon to iOS and Android</span>
-    <a class="tp-trailer-link" href="#trailer">Watch the trailer</a>
+    <p class="tp-lede">A calm two-player strategy game in the tradition of Nine Men's Morris. Place and slide your pebbles to make a line. Nothing is ever captured: on the bigger boards, a scored line returns to your hand. Play a friend nearby with no internet, pass one phone, or take on the computer.</p>
+    <div class="tp-hero-meta">
+      <span class="badge"><span class="dot" style="background: var(--p1)"></span><span class="dot" style="background: var(--p2)"></span>Coming soon to iOS and Android</span>
+      <span class="badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2c3 3 4 6.5 4 10s-1 7-4 10c-3-3-4-6.5-4-10s1-7 4-10z"/></svg>15 languages</span>
+      <a class="tp-trailer-link" href="#trailer">Watch the trailer</a>
+    </div>
   </div>
 
   <figure class="tp-phone">
@@ -37,23 +40,23 @@ main_class: game
   <div class="tp-features">
     <article class="tp-card">
       <svg class="tp-mill" width="64" height="16" viewBox="0 0 64 16" aria-hidden="true"><path d="M20 8H44" stroke="#bb86fc" stroke-width="3" stroke-linecap="round" stroke-dasharray="1 7"/><circle cx="8" cy="8" r="7" fill="#93c5fd"/><circle cx="56" cy="8" r="7" fill="#fca5a5"/></svg>
-      <h3>Play a friend nearby, no internet</h3>
-      <p>Your phones connect directly over Bluetooth or local Wi-Fi, with no account, so it works even with no signal. iPhone and Android can play each other. Or pass one phone between you, or take on the computer at three levels. There's no online play.</p>
+      <h3>Play friends nearby</h3>
+      <p>Two phones connect over Bluetooth or local Wi-Fi, no account or signal needed. iPhone and Android play together. No online play.</p>
     </article>
     <article class="tp-card">
       <svg class="tp-mill" width="64" height="16" viewBox="0 0 64 16" aria-hidden="true"><rect x="2" y="2" width="12" height="12" rx="3" fill="none" stroke="#a1a1aa" stroke-width="2"/><rect x="22" y="1" width="16" height="14" rx="3" fill="none" stroke="#a1a1aa" stroke-width="2"/><rect x="45" y="0" width="17" height="16" rx="3" fill="none" stroke="#bb86fc" stroke-width="2"/></svg>
       <h3>Three boards</h3>
-      <p>Classic, Standard and the bigger four-ring Advanced board. Advanced is part of Strategist, and you can try a game by watching an ad.</p>
+      <p>Classic, Standard and the bigger four-ring Advanced, part of Strategist. Try a game of it by watching an ad.</p>
     </article>
     <article class="tp-card">
       <svg class="tp-mill" width="64" height="16" viewBox="0 0 64 16" aria-hidden="true"><circle cx="8" cy="8" r="6" fill="#bb86fc"/><circle cx="24" cy="8" r="6" fill="#bb86fc"/><circle cx="40" cy="8" r="6" fill="#bb86fc"/><circle cx="56" cy="8" r="5" fill="none" stroke="#a1a1aa" stroke-width="2"/></svg>
       <h3>Puzzles every day</h3>
-      <p>A new Daily Puzzle with a streak to keep, plus Win from Here (three free a day) and Pebble Rush (one free run a day).</p>
+      <p>A Daily Puzzle with a streak to keep, plus three free Win from Here a day and one free Pebble Rush run.</p>
     </article>
     <article class="tp-card">
       <svg class="tp-mill" width="64" height="16" viewBox="0 0 64 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#93c5fd"/><circle cx="24" cy="8" r="7" fill="#fca5a5"/><circle cx="40" cy="8" r="7" fill="#bb86fc"/><circle cx="56" cy="8" r="7" fill="#fde68a"/></svg>
       <h3>Make it yours</h3>
-      <p>Earn boards, pebbles, strikes and themes by playing.</p>
+      <p>Earn boards, pebbles, strikes and themes by playing. Climb eight belts and chase 30 achievements.</p>
     </article>
   </div>
 </section>
@@ -119,7 +122,10 @@ main_class: game
       <h3>Grandmaster</h3>
       <ul class="tp-perks">
         <li>Everything in Strategist</li>
-        <li>Premium themes, boards, pebbles and strikes</li>
+        <li>Premium themes</li>
+        <li>Premium boards</li>
+        <li>Premium pebbles</li>
+        <li>Premium strikes</li>
       </ul>
     </article>
   </div>
@@ -131,9 +137,9 @@ main_class: game
   <p>The kind of game you can trust to leave you alone.</p>
   <div class="tp-fair">
     {% assign check = '<span class="tp-check" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#93c5fd" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>' %}
-        <div class="tp-card">{{ check }}<div><h3>Ads only when you ask</h3><p>No banners or pop-ups. An ad plays only when you choose to watch one, and ads are suitable for all ages and never personalised.</p></div></div>
-    <div class="tp-card">{{ check }}<div><h3>No energy timers or loot boxes</h3><p>No energy timers, loot boxes or in-game currency.</p></div></div>
-    <div class="tp-card">{{ check }}<div><h3>Your game data stays with you</h3><p>We have no accounts or servers, and the app sends us no crash or usage data. If you sign in to Game Center or Google Play Games, your achievements and leaderboard scores go there.</p></div></div>
+        <div class="tp-card">{{ check }}<div><h3>Ads only when you ask</h3><p>No banners or pop-ups. Ads play only when you choose, suit all ages and are never personalised.</p></div></div>
+    <div class="tp-card">{{ check }}<div><h3>No timers or loot boxes</h3><p>Nothing random for sale and no in-game currency. Upgrades are one-time purchases.</p></div></div>
+    <div class="tp-card">{{ check }}<div><h3>No accounts or servers</h3><p>Your progress stays on your device. Google handles ads, and Apple and Google handle purchases and any Game Center or Play Games scores. See the <a href="/three-pebbles/privacy/">privacy policy</a>.</p></div></div>
   </div>
 </section>
 
