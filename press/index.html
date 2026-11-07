@@ -1,0 +1,59 @@
+---
+title: Press Kit
+description: Press kit for Karello Studio and Three Pebbles, with fact sheet, descriptions, screenshots, logos and a trailer.
+main_class: game
+---
+<section class="tp-section">
+  <h1 class="press-title">Press kit</h1>
+  <p>Facts, words and artwork for writing about Three Pebbles. You're welcome to use anything here in coverage of the game.</p>
+  <p class="press-actions">
+    <a class="press-button" href="/assets/press/three-pebbles-press-kit.zip" download>Download everything (ZIP, 24 MB)</a>
+    <a href="https://youtu.be/YAFfDFxlhy4">Watch the trailer</a>
+    <a href="mailto:support@karellostudio.com?subject=Three%20Pebbles%20press">Contact</a>
+  </p>
+  <img class="press-feature" src="/assets/three-pebbles-share.png" alt="Three Pebbles: Line up three." width="1024" height="500">
+</section>
+
+<section class="tp-section">
+  <h2>Fact sheet</h2>
+  <dl class="press-facts">
+    <dt>Game</dt><dd>Three Pebbles</dd>
+    <dt>Developer</dt><dd>Karello Studio, an independent studio run by one developer</dd>
+    <dt>Genre</dt><dd>Two-player board strategy, mill game</dd>
+    <dt>Platforms</dt><dd>iOS and Android, phones and tablets</dd>
+    <dt>Release</dt><dd>Coming soon</dd>
+    <dt>Price</dt><dd>Free to play, with optional one-time upgrades. No subscription.</dd>
+    <dt>Ads</dt><dd>Optional rewarded ads only, shown when the player chooses to watch one</dd>
+    <dt>Players</dt><dd>1 against the computer, or 2 on one phone or nearby over Bluetooth or local Wi-Fi</dd>
+    <dt>Internet</dt><dd>Not needed. No account and no online play.</dd>
+    <dt>Languages</dt><dd>15</dd>
+    <dt>Website</dt><dd><a href="/three-pebbles/">karellostudio.com/three-pebbles</a></dd>
+    <dt>Contact</dt><dd><a href="mailto:support@karellostudio.com">support@karellostudio.com</a></dd>
+  </dl>
+</section>
+
+<section class="tp-section">
+  <h2>Descriptions</h2>
+  <div class="press-copy">
+    <h3>One line</h3>
+    <p>Three Pebbles is a calm mill strategy game: line up three, outplay the AI, or play a friend nearby.</p>
+    <h3>Short</h3>
+    <p>Three Pebbles is a calm two-player strategy game in the tradition of Nine Men's Morris. Line up three of your pebbles to score a set across three boards, against the computer at three levels or a friend on the same phone or nearby, with no account and no internet needed.</p>
+    <h3>Long</h3>
+    <p>Three Pebbles is a calm strategy game about one simple idea: line up three of your pebbles to score a set. Nothing is ever captured: on the bigger boards, a scored line returns to your hand.</p>
+    <p>There are three boards: Classic, the quick three-pebble game; Standard, the nine-pebble board people have played for centuries; and Advanced, a bigger four-ring board for longer games, which is part of the Strategist upgrade. Play the computer at Easy, Medium or Hard, pass one phone between you, or connect to a friend nearby over Bluetooth or local Wi-Fi. The AI runs on the phone and works offline.</p>
+    <p>A new Daily Puzzle arrives every day, alongside Win from Here and Puzzle Rush. Players earn belts, achievements, boards, pebbles and themes by playing. There are no energy timers, loot boxes or in-game currency, and the app sends no crash or usage data.</p>
+    <h3>About Karello Studio</h3>
+    <p>Karello Studio is an independent studio run by one developer, making small, thoughtful games.</p>
+  </div>
+</section>
+
+<section class="tp-section">
+  <h2>Screenshots</h2>
+  <p>Full-size originals are in the ZIP.</p>
+  <div class="shots">
+  {% for s in site.data.three_pebbles_shots %}
+    <figure><img src="/assets/three-pebbles/{{ s.file }}" alt="{{ s.caption }}" width="440" height="956" loading="lazy"><figcaption>{{ s.caption }}</figcaption></figure>
+  {% endfor %}
+  </div>
+</section>
