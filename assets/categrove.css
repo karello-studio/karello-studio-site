@@ -2,7 +2,6 @@
    Loaded only by pages that set css: in their front matter. */
 .cg { --primary: #ff9100; }
 .feature-game + .feature-game { margin-top: 24px; }
-.cg-card .feature-phone img { object-position: 50% 80%; }
 .cg .tp-phone { box-shadow: 0 0 0 1px rgba(255, 255, 255, .03), 0 30px 80px -20px rgba(255, 145, 0, .3); }
 main.cg .tp-phone img { display: block; width: 100%; height: auto; border-radius: 38px; }
 .cg .tp-features .tp-card h3 { margin-top: 0; }

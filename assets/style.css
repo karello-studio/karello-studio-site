@@ -238,7 +238,7 @@ main { flex: 1; padding-bottom: 64px; }
 .feature-meta { display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: center; }
 .feature-more { color: var(--primary); font-weight: 600; }
 .feature-phone { width: 240px; padding: 8px 8px 0; border-radius: 40px 40px 0 0; border-bottom: 0; align-self: end; }
-.feature-phone img { display: block; width: 100%; height: 300px; object-fit: cover; object-position: top; border-radius: 32px 32px 0 0; }
+.feature-phone img { display: block; width: 100%; height: auto; aspect-ratio: 442 / 908; object-fit: cover; object-position: top; border-radius: 32px 32px 0 0; }
 @media (max-width: 760px) {
   .home-hero { padding: 48px 0 40px; overflow-x: clip; margin: 0 -20px; padding-left: 20px; padding-right: 20px; }
   .home-hero .tp-board-motif { right: -200px; }
