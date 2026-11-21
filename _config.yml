@@ -5,6 +5,11 @@ plugins:
   - jekyll-sitemap
 exclude:
   - README.md
+  # Categrove is hidden until its launch: this drops categrove/ and every
+  # assets/categrove* file, and the homepage card checks it. To bring it back,
+  # delete the line below and, in index.html's front matter, uncomment the two
+  # Categrove lines (and delete the description line above them).
+  - "*categrove*"
 defaults:
   - scope: { path: "" }
     values: { layout: default }

@@ -1,8 +1,9 @@
 ---
 title: Karello Studio
-description: Karello Studio is an independent game studio making small, thoughtful games, including Three Pebbles, a calm mill strategy game for iOS and Android, and Categrove, a party word game coming soon.
+description: Karello Studio is an independent game studio making small, thoughtful games, including Three Pebbles, a calm mill strategy game for iOS and Android.
+# description: Karello Studio is an independent game studio making small, thoughtful games, including Three Pebbles, a calm mill strategy game for iOS and Android, and Categrove, a party word game coming soon.
 main_class: game
-css: /assets/categrove.css
+# css: /assets/categrove.css
 ---
 <section class="home-hero">
   <svg class="tp-board-motif" viewBox="0 0 600 600" aria-hidden="true" focusable="false">
@@ -30,6 +31,7 @@ css: /assets/categrove.css
     </div>
     <figure class="tp-phone feature-phone"><img src="/assets/three-pebbles/loop-poster.jpg" alt="Three Pebbles: a puzzle on the Standard board" width="442" height="960" loading="lazy"></figure>
   </a>
+  {%- unless site.exclude contains "*categrove*" %}
   <a class="feature-game cg cg-card" href="/categrove/">
     <div class="feature-text">
       <img src="/assets/categrove-icon.png" alt="" width="64" height="64">
@@ -40,4 +42,5 @@ css: /assets/categrove.css
     </div>
     <figure class="tp-phone feature-phone"><img src="/assets/categrove/card.jpg" alt="Categrove: the Home screen at night, with Charlie the cat under the trees" width="442" height="958" loading="lazy"></figure>
   </a>
+  {%- endunless %}
 </section>
