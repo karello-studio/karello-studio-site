@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- ==================================================================
+       THE OWNER'S PLACE: every word and switch of the page, here only.
+       All wording PROPOSED, awaiting the owner (launch-links/REPORT.md B).
+       Never "Nine Men's Morris" as the game's name; no App Store or
+       Google Play in page text while the stores are off.
+       ================================================================== -->
+  <title>Play Three Pebbles in your browser · Karello Studio</title>
+  <meta name="description" content="Play Three Pebbles against the computer in your browser: line up three, score a set. Free, no sign-up.">
+  <!-- noindex: the first deploy is unlinked, for measuring. REMOVE AT LAUNCH
+       (docs/ops/web-demo.md, "Going live"). -->
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://karellostudio.com/three-pebbles/play/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Karello Studio">
+  <meta property="og:title" content="Play Three Pebbles in your browser">
+  <meta property="og:description" content="Play Three Pebbles against the computer in your browser: line up three, score a set. Free, no sign-up.">
+  <meta property="og:url" content="https://karellostudio.com/three-pebbles/play/">
+  <!-- The site's share image: the page never fetches it; it must exist at
+       this address when the page goes live. -->
+  <meta property="og:image" content="https://karellostudio.com/assets/three-pebbles-share.png">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="500">
+  <meta property="og:image:alt" content="Three Pebbles: Line up three.">
+  <meta name="twitter:card" content="summary_large_image">
+  <script>
+    // The store switches, read by web/flutter_bootstrap.js (the old-browser
+    // page) and lib/main_web_demo.dart (the game). Switch a store on only
+    // when the app is live there AND its official badge file is in
+    // web/badges/ (app-store.png, google-play.png); the build stops if a
+    // file is missing. appStoreId and providerToken: digits, from App Store
+    // Connect, both to be confirmed by the owner. No appStoreId = no App
+    // Store badge even when switched on. No providerToken = untagged links.
+    window.tpDemo = {
+      appStoreLive: false,
+      googlePlayLive: false,
+      appStoreId: '6829056961',
+      providerToken: '',
+    };
+  </script>
+  <!-- ================================================================== -->
+
+  <!-- No base element: every file loads from beside this page, so the demo works
+       in any folder (/three-pebbles/play/ on the site, / locally). Beside the
+       page means the address must end in "/": without it every load would
+       go one folder up, so add it before anything loads. -->
+  <script>
+    if (!/\/$|\.html$/.test(location.pathname)) {
+      location.replace(location.pathname + '/' + location.search + location.hash);
+    }
+  </script>
+  <!-- The default theme's background (sleek_dark), so the page and the
+       Android browser bar are dark before Flutter's first frame. -->
+  <meta name="theme-color" content="#09090B">
+  <link rel="icon" type="image/png" href="icons/Icon-192.png">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <style>
+    html, body { margin: 0; background: #09090B; }
+    /* The loading screen: the logo and a bar that moves only when a real
+       loading step finishes (web/flutter_bootstrap.js). Nothing loops. */
+    #loading { position: fixed; inset: 0; z-index: 10; display: flex;
+      flex-direction: column; align-items: center; justify-content: center;
+      gap: 28px; background: #09090B; transition: opacity 200ms; }
+    #loading img { width: 112px; height: 112px; border-radius: 28px; }
+    #loading .track { width: 160px; height: 4px; border-radius: 2px;
+      background: #27272A; overflow: hidden; }
+    #loading .fill { width: 5%; height: 100%; background: #BB86FC;
+      transition: width 400ms ease-out; }
+    @media (prefers-reduced-motion: reduce) {
+      #loading, #loading .fill { transition: none; }
+    }
+    noscript p { color: #FAFAFA; font: 18px/1.5 system-ui, sans-serif;
+      max-width: 32em; margin: 0 auto; padding: 48px 24px; }
+    noscript a { color: #BB86FC; }
+  </style>
+</head>
+<body>
+  <noscript>
+    <!-- PROPOSED wording, with the head above. Also the only text search
+         engines read on this page. -->
+    <p>Three Pebbles is a calm strategy board game for two: place and move
+      your pebbles, line up three to score a set. This page plays it against
+      the computer and needs JavaScript.
+      <a href="https://karellostudio.com/three-pebbles/">About the game</a></p>
+    <style>#loading { display: none; }</style>
+  </noscript>
+  <div id="loading" role="progressbar" aria-label="Loading Three Pebbles"
+       aria-valuemin="0" aria-valuemax="100" aria-valuenow="5">
+    <img src="icons/Icon-192.png" alt="">
+    <div class="track"><div class="fill"></div></div>
+  </div>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
