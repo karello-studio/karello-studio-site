@@ -6,7 +6,7 @@ permalink: /three-pebbles/privacy/
 
 # Privacy Policy for Three Pebbles
 
-**Last Updated:** November 7, 2026
+**Last Updated:** November 14, 2026
 
 This policy covers the **Three Pebbles** app (the "App") from **Karello Studio** ("we", "us").
 
@@ -18,7 +18,7 @@ We have no accounts or servers, and the App sends us no personal information, so
 
 The App uses services from Google and Apple. They keep and handle data under their own policies, may process it outside your country, and we expect them to protect it to the same standard as this policy.
 
-- **Ads:** Google AdMob provides optional rewarded ads. When the App starts and when ads are loaded or shown, Google may process technical information such as your IP address, approximate location, identifiers, device details, diagnostics and ad interactions. Ads are requested as child-directed and non-personalized.
+- **Ads:** Google AdMob provides optional rewarded ads. When the App starts and when ads are loaded or shown, Google may process technical information such as your IP address, approximate location, identifiers, device details, diagnostics and ad interactions. Ads are requested as child-directed, so Google shows only non-personalized ads.
 - **Purchases:** the App Store and Google Play handle payments. We never see your payment details.
 - **Game Center and Google Play Games:** if you're signed in, your achievements, scores and account name go to Apple or Google, and other players may see them. These services may also collect their own usage data.
 
@@ -26,7 +26,7 @@ Data sent to Google's ad and game services is encrypted in transit. See the [Goo
 
 ## Nearby multiplayer
 
-Nearby play connects devices directly using Bluetooth, your local network and, on older Android versions, the location permission. The App doesn't read your location. Nearby players can see your display name, and the connection isn't encrypted.
+Nearby play connects devices directly using Bluetooth, your local network and, on older Android versions, the location permission. The App doesn't read your location. Nearby players, and anyone on the same network while you host, can see your display name, whether your device is an iPhone or Android, and a random ID the App creates when it's installed. The connection isn't encrypted.
 
 ## Your choices
 
