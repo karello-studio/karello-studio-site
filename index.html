@@ -21,16 +21,25 @@ main_class: game
 
 <section id="games" class="tp-section">
   <h2 class="section-label">Games</h2>
-  <a class="feature-game" href="/three-pebbles/">
+  <div class="feature-game">
     <div class="feature-text">
       <img src="/assets/three-pebbles-icon.png" alt="" width="64" height="64">
-      <h3>Three Pebbles</h3>
+      <h3><a class="feature-title" href="/three-pebbles/">Three Pebbles</a></h3>
       <p class="tp-tagline">Line up three.</p>
       <p>A calm two-player mill game in the tradition of Nine Men's Morris. Play a friend nearby with no internet, pass one phone between you, or take on the computer.</p>
-      <span class="feature-meta"><span class="badge"><span class="dot" style="background: var(--p1)"></span><span class="dot" style="background: var(--p2)"></span>Out now on Android · iOS beta on TestFlight</span><span class="feature-more">See the game →</span></span>
+      <div class="feature-meta">
+        <!-- Google's official badge replaces this link once the owner's Partner Marketing Hub access is approved:
+             the official PNG unchanged, at least 28 px tall, a quarter of its height clear on every side. -->
+        <a class="press-button" href="https://play.google.com/store/apps/details?id=com.karellostudio.threepebbles&amp;utm_source=karellostudio&amp;utm_campaign=site-home">Get it on Google Play</a>
+        <!-- On the App Store release this becomes the App Store button (app id 6829056961);
+             Apple's badge only once the app is live there. -->
+        <span class="badge"><span class="dot" style="background: var(--p1)"></span><span class="dot" style="background: var(--p2)"></span><a href="https://testflight.apple.com/join/V9Dk9XhY">iOS beta on TestFlight</a></span>
+        <a class="feature-link" href="/three-pebbles/play/">Play in your browser</a>
+        <span class="feature-more" aria-hidden="true">See the game →</span>
+      </div>
     </div>
     <figure class="tp-phone feature-phone"><img src="/assets/three-pebbles/loop-poster.jpg" alt="Three Pebbles: a puzzle on the Standard board" width="442" height="960" loading="lazy"></figure>
-  </a>
+  </div>
   {%- unless site.exclude contains "*categrove*" %}
   <a class="feature-game cg cg-card" href="/categrove/">
     <div class="feature-text">

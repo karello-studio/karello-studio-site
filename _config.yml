@@ -13,6 +13,3 @@ exclude:
 defaults:
   - scope: { path: "" }
     values: { layout: default }
-  # The web demo is unlinked for now: keep it out of the sitemap.
-  - scope: { path: "three-pebbles/play" }
-    values: { sitemap: false }

@@ -217,6 +217,7 @@ main { flex: 1; padding-bottom: 64px; }
 .home-hero h1 { font-size: clamp(2.6rem, 8vw, 4.4rem); font-weight: 800; letter-spacing: -0.035em; margin: 0 0 16px; max-width: 12em; }
 .home-hero p { color: var(--muted); font-size: 1.2rem; margin: 0; }
 .feature-game {
+  position: relative;
   display: grid;
   grid-template-columns: minmax(0, 1fr) 240px;
   gap: 40px;
@@ -237,6 +238,14 @@ main { flex: 1; padding-bottom: 64px; }
 .feature-text p { color: var(--muted); margin: 0 0 24px; max-width: 28em; }
 .feature-meta { display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: center; }
 .feature-more { color: var(--primary); font-weight: 600; }
+/* A card with its own buttons: the title link covers the card, the buttons sit above it */
+.feature-title { text-decoration: none; }
+.feature-title:hover { color: inherit; }
+.feature-title::after { content: ""; position: absolute; inset: 0; border-radius: 32px; }
+.feature-title:focus-visible { outline: none; }
+.feature-title:focus-visible::after { outline: 2px solid var(--primary); outline-offset: -2px; }
+.feature-meta a:not(.feature-title) { position: relative; z-index: 1; }
+.feature-link { font-size: 15px; }
 .feature-phone { width: 240px; padding: 8px 8px 0; border-radius: 40px 40px 0 0; border-bottom: 0; align-self: end; }
 .feature-phone img { display: block; width: 100%; height: auto; aspect-ratio: 442 / 908; object-fit: cover; object-position: top; border-radius: 32px 32px 0 0; }
 @media (max-width: 760px) {
